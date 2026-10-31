@@ -1,0 +1,39 @@
+{
+  "$comment": "SE2 Rally Mod - wheel and suspension tuning. These values are typed into the VRAGE3 Mod Editor inspector fields; see docs/TUNING.md for field names and rationale.",
+  "rallyWheel": {
+    "prefabName": "RallyWheel50",
+    "sizeCm": 50,
+    "wheel": {
+      "friction": 1.25,
+      "maxSpeedMs": 45,
+      "powerPercent": 130,
+      "impulsePercent": 110
+    },
+    "suspension": {
+      "minHeightM": 0.08,
+      "maxHeightM": 0.55,
+      "strengthPercent": 120,
+      "stiffnessPercent": 85,
+      "dampingPercent": 115
+    }
+  },
+  "startGate": {
+    "prefabName": "RallyStartGate",
+    "sensor": { "rangeM": 4, "fieldWidthM": 8 },
+    "stagingLightDelayS": 3,
+    "lightSequence": ["red", "green"]
+  },
+  "checkpoint": {
+    "prefabName": "RallyCheckpoint",
+    "sensor": { "rangeM": 6, "field": "omni" }
+  },
+  "timingConsole": {
+    "prefabName": "RallyTimingConsole",
+    "mode": "countUp",
+    "precisionS": 0.1
+  },
+  "penalties": {
+    "missedCheckpointS": 5,
+    "lostWheelS": 10
+  }
+}

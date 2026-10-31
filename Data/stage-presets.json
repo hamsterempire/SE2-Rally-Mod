@@ -1,0 +1,26 @@
+{
+  "$comment": "Per-surface vehicle presets used for the RallyCar_* blueprints. Only friction, stiffness and damping change between surfaces so blueprints stay drop-in compatible.",
+  "surfaces": {
+    "gravel": {
+      "displayName": "Gravel / Dirt",
+      "blueprint": "RallyCar_Gravel",
+      "friction": 1.25,
+      "stiffnessPercent": 85,
+      "dampingPercent": 115
+    },
+    "sand": {
+      "displayName": "Sand / Regolith",
+      "blueprint": "RallyCar_Sand",
+      "friction": 1.10,
+      "stiffnessPercent": 75,
+      "dampingPercent": 100
+    },
+    "ice": {
+      "displayName": "Ice",
+      "blueprint": "RallyCar_Ice",
+      "friction": 1.40,
+      "stiffnessPercent": 90,
+      "dampingPercent": 130
+    }
+  }
+}

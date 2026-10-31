@@ -1,0 +1,15 @@
+# VRAGE3 editor temp/cache files
+*.tmp
+*.bak
+*.cache
+.vs/
+bin/
+obj/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Blender backups
+*.blend1
+*.blend2

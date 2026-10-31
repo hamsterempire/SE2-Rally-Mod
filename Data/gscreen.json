@@ -1,0 +1,40 @@
+{
+  "$comment": "G-Screen entries for the rally blocks. Follow the official 'Guide: G-Screen' to add each entry under a new 'Rally' category in the VRAGE3 Mod Editor.",
+  "category": {
+    "id": "Rally",
+    "displayName": "Rally",
+    "icon": "Assets/Blocks/RallyShared/Icons/rally_category.png"
+  },
+  "entries": [
+    {
+      "blockPrefab": "Assets/Blocks/RallyWheel/50/RallyWheel50",
+      "displayName": "Rally Wheel 50",
+      "description": "High-grip, long-travel wheel for rally stages.",
+      "icon": "Assets/Blocks/RallyWheel/50/Icon/rallywheel50.png"
+    },
+    {
+      "blockPrefab": "Assets/Blocks/RallyStartGate/50/RallyStartGate",
+      "displayName": "Rally Stage Start Gate",
+      "description": "Sensor-gated start line with staging lights and timer start output.",
+      "icon": "Assets/Blocks/RallyStartGate/50/Icon/rallystartgate.png"
+    },
+    {
+      "blockPrefab": "Assets/Blocks/RallyCheckpoint/50/RallyCheckpoint",
+      "displayName": "Rally Checkpoint Beacon",
+      "description": "Checkpoint pylon that registers split times.",
+      "icon": "Assets/Blocks/RallyCheckpoint/50/Icon/rallycheckpoint.png"
+    },
+    {
+      "blockPrefab": "Assets/Blocks/RallyTimingConsole/50/RallyTimingConsole",
+      "displayName": "Rally Timing Console",
+      "description": "Stage timer with start/split/stop event controller inputs.",
+      "icon": "Assets/Blocks/RallyTimingConsole/50/Icon/rallytimingconsole.png"
+    },
+    {
+      "blockPrefab": "Assets/Blocks/RallyPlate/50/RallyPlate50",
+      "displayName": "Rally Number Plate",
+      "description": "Light armor plate with rally livery.",
+      "icon": "Assets/Blocks/RallyPlate/50/Icon/rallyplate50.png"
+    }
+  ]
+}
