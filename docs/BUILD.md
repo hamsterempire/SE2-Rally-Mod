@@ -1,9 +1,11 @@
 # SE2 Rally Mod — Build Guide
 
 This guide turns the repo contents into a publishable Space Engineers 2 mod.
-SE2 has **no scripting API** yet, so every block is pure data: a VRAGE3 prefab
-plus definition (`.def`) files, and all gameplay logic is vanilla automation
-(sensor → event controller → timer → light).
+Blocks are pure data: a VRAGE3 prefab plus definition (`.def`) files. Gameplay logic
+is available two ways: C# scripts loaded via the `-loadScripts` launch parameter
+(`Scripts/SE2RallyMod/`, recommended for full timing/splits/penalties), or vanilla
+automation wiring (sensor → event controller → timer → light) as a no-launch-parameter
+fallback.
 
 ## 0. Prerequisites
 

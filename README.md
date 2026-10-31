@@ -18,8 +18,12 @@ timers, sensors, and event controllers into a planetary rally racing experience.
 | Stage Presets | Three ready-to-load vehicle setups: Gravel, Sand, Ice |
 
 Each block is a VRAGE3 **prefab** (component container) plus its **definition** (`.def`)
-data files. SE2 has no scripting API yet, so all logic uses vanilla automation blocks
-(sensor → event controller → timer/light), packaged as copy-paste-able blueprints.
+data files. Stage logic comes in two interchangeable flavors:
+
+- **Scripts** (`Scripts/`) — C# session components loaded via the game's
+  `-loadScripts` launch parameter; full timing, splits, and penalties.
+- **Vanilla automation fallback** — sensor → event controller → timer/light wiring
+  for players who don't want to use the launch parameter.
 
 ## Repository layout
 
@@ -32,6 +36,8 @@ Data/
   rally-tuning.json  Reference values used when tuning each block in the editor
   gscreen.json       G-Screen (toolbar) category entries for the rally blocks
   stage-presets.json Wheel/suspension presets per surface type
+Scripts/
+  SE2RallyMod/       C# scripts loaded via -loadScripts (stage manager + HUD)
 Source/
   Blender/           .blend + .fbx sources for models (LODs, collisions, mount points)
 docs/
@@ -48,9 +54,11 @@ Mod Editor generates; `docs/BUILD.md` walks through creating each one, and
 ## Quick start
 
 1. Install the **Space Engineers 2 Mod SDK** from Steam (Library → Tools).
-2. Launch it, press **+ Add Mod** in the VRAGE3 Mod HUB, title it `SE2 Rally Mod`.
-3. Follow `docs/BUILD.md` — it maps every file in this repo to an editor action.
-4. Test with **Start Game** from the HUB, then **Publish** to the Steam Workshop.
+2. Optional (script timing): set launch options to
+   `-loadScripts "<repo>\Scripts"` — see `Scripts/README.md`.
+3. Launch the SDK, press **+ Add Mod** in the VRAGE3 Mod HUB, title it `SE2 Rally Mod`.
+4. Follow `docs/BUILD.md` — it maps every file in this repo to an editor action.
+5. Test with **Start Game** from the HUB, then **Publish** to the Steam Workshop.
 
 ## Racing flow (in-game)
 
